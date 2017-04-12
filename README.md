@@ -26,7 +26,7 @@ Configure esdoc to use this plugin, and specify the set of babel plugins you wis
       "name": "esdoc-babel-plugin",
       "option": {
         "plugins": [
-          "babel-plugin-angular2-annotations",
+          "angular2-annotations",
           "transform-decorators-legacy",
           "transform-flow-strip-types"
         ]

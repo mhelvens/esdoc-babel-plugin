@@ -1,38 +1,35 @@
 {
-  "name": "esdoc-flow-plugin",
-  "version": "1.0.0",
-  "description": "A Flow plugin for ESDoc.",
-  "main": "index.js",
+  "name": "esdoc-babel-plugin",
+  "version": "0.1.0",
+  "description": "Simple esdoc plugin to run certain babel transformations on code before handing it to esdoc",
+  "main": "src/index.js",
   "scripts": {
-    "lint": "./node_modules/eslint/bin/eslint.js .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eaviles/esdoc-flow-plugin.git"
+    "url": "git+https://github.com/mhelvens/esdoc-babel-plugin.git"
   },
   "keywords": [
     "esdoc",
-    "flow",
-    "flowtype"
+    "babel"
   ],
-  "author": "Edgardo Avilés <eaviles@gmail.com>",
+  "author": "Michiel Helvensteijn <mhelvens@gmail.com>",
+  "contributors": [
+    "Edgardo Avilés <eaviles@gmail.com>",
+    "Michiel Helvensteijn <mhelvens@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eaviles/esdoc-flow-plugin/issues"
+    "url": "https://github.com/mhelvens/esdoc-babel-plugin/issues"
   },
-  "homepage": "https://github.com/eaviles/esdoc-flow-plugin#readme",
+  "homepage": "https://github.com/mhelvens/esdoc-babel-plugin#readme",
   "devDependencies": {
-    "eslint": "2.13.0",
-    "eslint-config-airbnb-base": "3.0.1",
-    "eslint-plugin-import": "1.8.1"
   },
   "engines": {
     "node": ">=4.4.4"
   },
   "dependencies": {
-    "babel-core": "6.9.1",
-    "babel-plugin-syntax-jsx": "6.8.0",
-    "babel-plugin-transform-flow-strip-types": "6.8.0"
+    "babel-core": "6"
   }
 }

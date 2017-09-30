@@ -1,6 +1,6 @@
 {
   "name": "esdoc-babel-plugin",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "Simple esdoc plugin to run certain babel transformations on code before handing it to esdoc",
   "main": "src/index.js",
   "scripts": {
@@ -30,6 +30,6 @@
     "node": ">=4.4.4"
   },
   "dependencies": {
-    "babel-core": "6"
+    "babel-core": "^7.0.0-beta.2"
   }
 }

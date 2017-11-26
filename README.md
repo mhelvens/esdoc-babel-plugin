@@ -9,13 +9,15 @@ This can be used, for example, to remove certain syntax not supported by esdoc.
 npm install --save-dev mhelvens/esdoc-babel-plugin
 ```
 
-Make sure you also install the babel plugins you want to use. For example:
+Make sure you also install `babel-core` (version 6 or higher) and
+the babel plugins you want to use. For example:
 
 ```sh
-npm install --save-dev babel-plugin-angular2-annotations babel-plugin-transform-decorators-legacy babel-plugin-transform-flow-strip-types
+npm install --save-dev babel-core babel-plugin-angular2-annotations babel-plugin-transform-decorators-legacy babel-plugin-transform-flow-strip-types
 ```
 
-Configure esdoc to use this plugin, and specify the set of babel plugins you wish to run, in `.esdoc.json`:
+Configure esdoc to use this plugin, and specify the set of babel plugins you wish to run,
+in `.esdoc.json`:
 
 ```javascript
 {
@@ -36,7 +38,8 @@ Configure esdoc to use this plugin, and specify the set of babel plugins you wis
 }
 ```
 
-Note that the `"option"` object is passed directly to babel, so it supports all options that babel supports.
+Note that the `"option"` object is passed directly to babel, so it supports all options
+that babel supports.
 
 Execute ESDoc:
 

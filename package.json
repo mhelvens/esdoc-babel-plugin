@@ -1,11 +1,8 @@
 {
   "name": "esdoc-babel-plugin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Simple esdoc plugin to run certain babel transformations on code before handing it to esdoc",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mhelvens/esdoc-babel-plugin.git"
@@ -24,12 +21,10 @@
     "url": "https://github.com/mhelvens/esdoc-babel-plugin/issues"
   },
   "homepage": "https://github.com/mhelvens/esdoc-babel-plugin#readme",
-  "devDependencies": {
+  "peerDependencies": {
+    "babel-core": ">=6 <8 || >=7.0.0-beta <7.0.1"
   },
   "engines": {
     "node": ">=4.4.4"
-  },
-  "dependencies": {
-    "babel-core": "6"
   }
 }
